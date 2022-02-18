@@ -1,0 +1,21 @@
+job categories:
+
+1. Restorante/Lokale
+2. Hoteleri
+3. Programim
+4. Inxhinieri
+4. Pune nga shtepia
+5. Marketing/Media
+6. Te tjera
+
+
+
+product categories:
+
+1. Automjete
+2. Veshje
+3. Produkte kozmetike
+4. produkte bio
+5. Elektronike
+6. Elektroshtepiake
+7. te tjera
