@@ -2,10 +2,10 @@ require("dotenv").config();
 const mysql = require("mysql");
 
 const conn = mysql.createPool({
-  host: "localhost:3306",
-  user: "algridal_orgito",
-  password: "0L9u2jd^",
-  database: "algridal_shopcon",
+  host: "linux18.host.al",
+  user: "algridal_shopcon1",
+  password: "Ae36du~2",
+  database: "algridal_shopcon1",
   connectionLimit: 50,
 });
 
