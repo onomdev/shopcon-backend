@@ -31,17 +31,19 @@ const {
 } = require("../controllers/marketplace.controller");
 
 router
-  .route(process.env.PRODUCTS_ENDPOINT)
+  .route("/categories/marketplace/products")
   .get(getAllProducts)
   .post(upload.single("product_image"), createProduct);
-router.route(process.env.PRODUCTS_SEARCH_ENDPOINT).get(searchForProduct);
 router
-  .route(process.env.PRODUCTS_ID_ENDPOINT)
+  .route("/categories/marketplace/products/search/:product_name")
+  .get(searchForProduct);
+router
+  .route("/categories/marketplace/products/:id")
   .get(getAProductById)
   .delete(deleteProduct)
   .patch(updateProduct);
 
 router
-  .route(process.env.PRODUCTS_CATEGORY_ENDPOINT)
+  .route("/categories/marketplace/products/categories/:category")
   .get(getAllProductsByCategory);
 module.exports = router;

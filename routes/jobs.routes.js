@@ -32,20 +32,20 @@ const {
 
 // .route("/categories/jobs")
 router
-  .route(process.env.JOBS_ENDPOINT)
+  .route("/categories/jobs")
   .get(getAllJobs)
   .post(upload.single("jobimage"), createJob);
 
 //.route("/categories/jobs/:id")
 router
-  .route(process.env.JOBS_ID_ENDPOINT)
+  .route("/categories/jobs/:id")
   .get(getAJobById)
   .delete(deleteJob)
   .patch(updateJob);
 
 // "/categories/jobs/search/:title"
-router.route(process.env.JOBS_SEARCH_ENDPOINT).get(searchForJobs);
+router.route("/categories/jobs/search/:title").get(searchForJobs);
 // "/categories/jobs/categories/:category"
-router.route(process.env.JOBS_CATEGORY_ENDPOINT).get(getAllJobsByCategory);
+router.route("/categories/jobs/categories/:category").get(getAllJobsByCategory);
 
 module.exports = router;
