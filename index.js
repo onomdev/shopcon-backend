@@ -9,13 +9,13 @@ require("dotenv").config();
 const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(
-  `/uploads/apikey=7fab6989Waf21t472bfafd4183075150de62`,
+  `/uploads/apikey=?`,
   express.static("uploads")
 );
 app.use(express.json());
-app.use(`/api/v1/mistreci/apikey=7fab6989Waf21t472bfafd4183075150de62`, jobs);
+app.use(`/api/v1/mistreci/apikey=?`, jobs);
 app.use(
-  `/api/v1/mistreci/apikey=7fab6989Waf21t472bfafd4183075150de62`,
+  `/api/v1/mistreci/apikey=?`,
   marketplace
 );
 app.use(notFound);
