@@ -1,6 +1,6 @@
 # shopcon-backend
 
-Ketu gjendet kodi per back-end te platformes Shopcon. Disa detaje jane hequr per ceshtje sigurie, te tilla si:
+Here is the back-end code of the Shopcon platform. Some details have been removed because of security reasons:
 
 - Database host
 - Database password
@@ -10,9 +10,9 @@ Ketu gjendet kodi per back-end te platformes Shopcon. Disa detaje jane hequr per
 
 ## Hosting
 
-Ne keto momente back-end eshte running ne Heroku. Nje Virtual Private Server(VPS) falas. Kini parasysh se per shkak se back-end ndodhet ne kete server, ka funksionalitete te kufizuara, si:
+At this moment the back-end is hosted on Heroku. A free Virtual private server(VPS). Because of this there are some limitations like:
 
-- Dynos behen reset cdo 30 minuta
-- Storage eshte teper e kufizuar qe do te thote se imazhet e postuara do te ruhen per 30 minuta e me pas do te fshihen
+- Dynos reset every 30 minutes.
+- Limited storage, that makes certain data like images be deleted after a certain amount of time.
 
-### Heroku hosting po perdoret vetem per development, me pas disa funksionalitete do te migrohen ne Digital Ocean dhe AWS S3
+### Heroku hosting is only used for development, some functionalities could be easily migrated to AWS or Digital Ocean.
